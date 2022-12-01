@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рейтинг</title>
+
+    <!-- CSS -->
+    <!-- Bootstrap взят с сайта dev.берегдобрыхдел.рф -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <!-- main-header -->
+    <div id="mainheader" class="visible-lg visible-md">
+        <header class="header-main">
+
+            <div class="container">
+
+                <div class="menu-row py-15">
+                    <!-- logo -->
+                    <div class="d-inline-block va-center top-logo-block">
+                        <a class="d-block logo" href="#">
+                            <img src="img/logo.svg" alt="LOGO" title="LOGO" />
+                        </a>
+                    </div>
+
+                    <!-- social -->
+                    <div class="d-inline-block va-center top-social-block">
+                        <div class="d-inline-block top-social-text">Мы в социальных сетях</div>
+                        <div class="d-inline-block social-icons-header">
+                            <ul>
+                                <li class="telegram">
+                                    <a href="#" rel="nofollow" title="Telegram">
+                                        <img src="img/icons/icon-telegram.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="vk">
+                                    <a href="#" rel="nofollow" title="Вконтакте">
+                                        <img src="img/icons/icon-vk.svg" alt="">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ml-auto">
+                        <!-- search -->
+                        <div class="d-inline-block va-center top-search-block">
+                            <button class="inline-search-show search-modal-show" title="Поиск">
+                                <img src="img/icons/icon-search.svg" alt="">
+                            </button>
+                        </div>
+
+                        <!-- login btn -->
+                        <div class="d-inline-block va-center top-login-block">
+                            <a class="btn btn-transparent" href="#">
+                                Войти или Зарегистрироваться
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- / .menu-row -->
+
+
+                <div class="menu-row">
+                    <!-- main-menu -->
+                    <div class="menu-only">
+                        <nav class="menu-nav">
+                            <div class="table-menu">
+                                <table>
+                                    <tr>
+                                        <td class="menu-item active">
+                                            <div class="wrap">
+                                                <a class="" href="#">Новости
+                                                    <div class="line-wrapper"><span class="line"></span></div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="menu-item">
+                                            <div class="wrap">
+                                                <a class="" href="#">О нас
+                                                    <div class="line-wrapper"><span class="line"></span></div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="menu-item">
+                                            <div class="wrap">
+                                                <a class="" href="#">Расписание
+                                                    <div class="line-wrapper"><span class="line"></span></div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="menu-item">
+                                            <div class="wrap">
+                                                <a class="" href="#">Карта мероприятий
+                                                    <div class="line-wrapper"><span class="line"></span></div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="menu-item">
+                                            <div class="wrap">
+                                                <a class="" href="#">Галерея
+                                                    <div class="line-wrapper"><span class="line"></span></div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="menu-item">
+                                            <div class="wrap">
+                                                <a class="" href="#">Рейтинг
+                                                    <div class="line-wrapper"><span class="line"></span></div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="menu-item">
+                                            <div class="wrap">
+                                                <a class="" href="#">Инструкции
+                                                    <div class="line-wrapper"><span class="line"></span></div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="menu-item">
+                                            <div class="wrap">
+                                                <a class="" href="#">Контакты
+                                                    <div class="line-wrapper"><span class="line"></span></div>
+                                                </a>
+                                            </div>
+                                        </td>
+
+                                        <!-- collapse icon -->
+                                        <!-- <td class="menu-item dropdown js-dropdown nosave">
+                                            <div class="wrap">
+                                                <a class="dropdown-toggle more-items" href="#">
+                                                    <span>
+                                                        <img src="img/icons/icon-menu-collapse.svg" alt="">
+                                                    </span>
+                                                </a>
+                                                <span class="tail"></span>
+                                                <ul class="dropdown-menu"></ul>
+                                            </div>
+                                        </td> -->
+                                    </tr>
+                                </table>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- / .menu-row -->
+
+            </div>
+            <!-- / .container -->
+
+        </header>
+    </div>
+    <!-- / .main-header -->
+
+    <!-- headerfixed -->
+    <div id="headerfixed">
+        <div class="container">
+            <div class="menu-row">
+
+                <div class="fixed-logo-block">
+                    <a class="d-block logo" href="#">
+                        <img src="img/logo-mobile.svg" alt="LOGO" title="LOGO" />
+                    </a>
+                </div>
+
+                <div class="fixed-menu-only">
+                    <nav class="menu-nav">
+                        <div class="table-menu">
+                            <table>
+                                <tr>
+                                    <td class="menu-item active">
+                                        <div class="wrap">
+                                            <a class="" href="#">
+                                                Новости
+                                                <div class="line-wrapper"><span class="line"></span></div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="menu-item">
+                                        <div class="wrap">
+                                            <a class="" href="#">
+                                                О нас
+                                                <div class="line-wrapper"><span class="line"></span></div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="menu-item">
+                                        <div class="wrap">
+                                            <a class="" href="#">
+                                                Расписание
+                                                <div class="line-wrapper"><span class="line"></span></div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="menu-item">
+                                        <div class="wrap">
+                                            <a class="" href="#">
+                                                Карта мероприятий
+                                                <div class="line-wrapper"><span class="line"></span></div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="menu-item">
+                                        <div class="wrap">
+                                            <a class="" href="#">
+                                                Галерея
+                                                <div class="line-wrapper"><span class="line"></span></div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="menu-item">
+                                        <div class="wrap">
+                                            <a class="" href="#">
+                                                Рейтинг
+                                                <div class="line-wrapper"><span class="line"></span></div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="menu-item">
+                                        <div class="wrap">
+                                            <a class="" href="#">
+                                                Инструкции
+                                                <div class="line-wrapper"><span class="line"></span></div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="menu-item">
+                                        <div class="wrap">
+                                            <a class="" href="#">
+                                                Контакты
+                                                <div class="line-wrapper"><span class="line"></span></div>
+                                            </a>
+                                        </div>
+                                    </td>
+
+                                    <!-- collapse icon -->
+                                    <!-- <td class="menu-item dropdown js-dropdown nosave">
+                                        <div class="wrap">
+                                            <a class="dropdown-toggle more-items" href="#">
+                                                <span>
+                                                    <img src="img/icons/icon-menu-collapse.svg" alt="">
+                                                </span>
+                                            </a>
+                                            <span class="tail"></span>
+                                            <ul class="dropdown-menu"></ul>
+                                        </div>
+                                    </td> -->
+
+                                </tr>
+                            </table>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="inner-table-block">
+                    <span class="wrap_icon wrap_cabinet">
+                        <img src="img/icons/svgexport-7.svg" alt="">
+                    </span>
+                </div>
+
+                <div class="inner-table-block">
+                    <span class="wrap_icon wrap_search search-modal-show">
+                        <img src="img/icons/svgexport-8.svg" alt="">
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- / .headerfixed -->
+
+    <!-- mobileheader -->
+    <div id="mobileheader" class="visible-xs visible-sm">
+
+        <!-- mobileheader-v1 -->
+        <div class="mobileheader-v1">
+
+            <div class="button-and-logo">
+                <div class="burger">
+                    <i class="svg inline  svg-inline-burger dark" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <path data-name="Rounded Rectangle 81 copy 2" class="cls-1"
+                                d="M330,114h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,114Zm0,7h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,121Zm0,7h16a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H330a1,1,0,0,1-1-1h0A1,1,0,0,1,330,128Z"
+                                transform="translate(-329 -114)" />
+                        </svg>
+                    </i>
+
+                    <i class="svg inline  svg-inline-close dark" aria-hidden="true">
+                        <svg id="Close.svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #222;
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="Rounded_Rectangle_114_copy_3" data-name="Rounded Rectangle 114 copy 3"
+                                class="cls-1"
+                                d="M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z"
+                                transform="translate(-325 -130)" />
+                        </svg>
+                    </i>
+                </div>
+
+                <div class="logo-block">
+                    <a class="d-block logo" href="#">
+                        <img src="img/logo-mobile.svg" alt="LOGO" title="LOGO" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-icons">
+                <div class="wrap_icon">
+                    <button class="inline-search-show twosmallfont search-modal-show" title="Поиск">
+                        <i class="svg inline  svg-inline-search" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #222;
+                                            fill-rule: evenodd;
+                                        }
+                                    </style>
+                                </defs>
+                                <path data-name="Rounded Rectangle 106" class="cls-1"
+                                    d="M1590.71,131.709a1,1,0,0,1-1.42,0l-4.68-4.677a9.069,9.069,0,1,1,1.42-1.427l4.68,4.678A1,1,0,0,1,1590.71,131.709ZM1579,113a7,7,0,1,0,7,7A7,7,0,0,0,1579,113Z"
+                                    transform="translate(-1570 -111)" />
+                            </svg>
+                        </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- / .mobileheader-v1 -->
+
+        <!-- mobilemenu -->
+        <div id="mobilemenu" class="dropdown">
+            <div class="mobilemenu-v1 scroller compact_menu">
+                <div class="wrap">
+                    <div class="menu middle">
+                        <ul>
+                            <li>
+                                <a class="dark-color" href="/auth/">
+                                    <i class="svg inline  svg-inline-cabinet" aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18">
+                                            <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                        fill: #222;
+                                                        fill-rule: evenodd;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="cls-1"
+                                                d="M9,18a9,9,0,1,1,9-9A9,9,0,0,1,9,18Zm3.586-3.019a4.086,4.086,0,0,0-7.169,0A6.831,6.831,0,0,0,12.586,14.981ZM9,1.99A6.989,6.989,0,0,0,3.938,13.815a5.969,5.969,0,0,1,10.128-.006A6.989,6.989,0,0,0,9,1.99ZM9.064,10H8.935A2.936,2.936,0,0,1,6,7.064V6.935A2.936,2.936,0,0,1,8.935,4H9.064A2.936,2.936,0,0,1,12,6.935V7.064A2.936,2.936,0,0,1,9.064,10Zm1.217-3.023A1.258,1.258,0,0,0,9.023,5.719H8.977A1.258,1.258,0,0,0,7.719,6.977V7.054A1.258,1.258,0,0,0,8.977,8.312H9.023a1.258,1.258,0,0,0,1.258-1.258V6.977Z">
+                                            </path>
+                                        </svg>
+                                    </i>
+                                    <span>Войти/Регистрация</span>
+                                    <span class="arrow"><i class="svg svg_triangle_right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li class="selected">
+                                <a class="dark-color" href="/news/" title="Новости">
+                                    <span>Новости</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dark-color" href="/about/" title="О нас">
+                                    <span>О нас</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dark-color" href="/calendar/" title="Расписание">
+                                    <span>Расписание</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dark-color" href="/map/" title="Карта мероприятий">
+                                    <span>Карта мероприятий</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dark-color" href="/gallery/" title="Галерея">
+                                    <span>Галерея</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dark-color" href="/rating/2021/" title="Рейтинг">
+                                    <span>Рейтинг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dark-color" href="/howto/" title="Инструкции">
+                                    <span>Инструкции</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dark-color" href="/contacts/" title="Контакты">
+                                    <span>Контакты</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-icons">
+                        <!-- noindex -->
+                        <ul>
+                            <li class="telegram">
+                                <a href="https://t.me/voda_rossii" target="_blank" rel="nofollow" title="Telegram">
+                                    <img src="img/icons/icon-telegram.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="vk">
+                                <a href="https://vk.com/beregdobryhdel" target="_blank" rel="nofollow"
+                                    title="Вконтакте">
+                                    <img src="img/icons/icon-vk.svg" alt="">
+                                </a>
+                            </li>
+
+                        </ul>
+                        <!-- /noindex -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / #mobilemenu -->
+
+    </div>
+    <!-- / .mobileheader -->
+    <!-- /HEADER -->
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- RATING HERO -->
+        <section class="rating-hero">
+            <div class="container">
+                <div class="page-top-main">
+                    <div class="page-title">
+                        <h1 class="shares" id="pagetitle">Рейтинг активности регионов</h1>
+                    </div>
+                    <div class="top-share">
+                        <ul>
+                            <li>
+                                <a class="btn btn-share" href="#">
+                                    <i class="svg svg-print"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="mb-52">
+                            <p>Традиционно по итогам проведения мероприятий в рамках акции «Вода России» Минприроды России (<a href="#">Берег добрых дел</a>) составляет рейтинг самых активных регионов-участников. В нем учитывается численность волонтеров, их соотношение к населению субъекта и протяженность очищенных берегов. В рейтинге представлены все 85 регионов страны.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / .RATING HERO -->
+
+        <section class="rating-widget">
+            <div class="container">
+                <!-- Разработчику, перенести виджет со страницы https://xn--90aafebcae8c0asf9d6d.xn--p1ai/rating/2021/ -->
+                <img src="img/rating-widget.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="rating-download">
+            <div class="container">
+                <div class="btn-box">
+                    <a class="btn btn-primary fz-16 btn-rating" href="#">Рейтинг 2019 <span class="svg svg-rating-download"></span></a>
+                    <a class="btn btn-primary fz-16 btn-rating" href="#">Рейтинг 2020 <span class="svg svg-rating-download"></span></a>
+                    <a class="btn btn-primary fz-16 btn-rating" href="#">Рейтинг 2021 <span class="svg svg-rating-download"></span></a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="hr-line"></div>
+            </div>
+        </section>
+
+        <section class="rating-nomination">
+            <div class="container">
+                <div class="row row-flex g-16">
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-01.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Рекорд по общей протяженности очищенной береговой линии
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-02.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Рекорд по объему собранного мусора
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-03.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Наибольшее количество проведенных уборок в рамках Акции
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-04.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Самое массовое мероприятие года
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-05.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Прорыв года *
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-06.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Самый большой объем мусора, отправленный на переработку
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-07.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Наибольшее количество привлеченных партнеров**
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-08.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Самое известное мероприятие***
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-09.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Самый креативный формат субботника
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-20 col-sm-6 col-xs-6">
+                        <div class="rating-nomination__item">
+                            <div class="rating-nomination__item-img">
+                                <img src="img/rating-10.svg" alt="">
+                            </div>
+                            <div class="rating-nomination__item-title">
+                                Самая необычная находка
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-nomination__description">
+                    <p><span class="text-primary">*</span> Самый большой годовой “скачок” в рейтинге регионов</p>
+                    <p><span class="text-primary">**</span> На основании отчетов Ответственных исполнителей: число коммерческих, <br> некоммерческих и государственных организаций, поддержавших мероприятие</p>
+                    <p><span class="text-primary">***</span> На основании отчетов Ответственных исполнителей: число упоминаний в СМИ <br> и ссылки на публикации</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- /MAIN -->
+
+
+    <!-- FOOTER -->
+    <!-- subscribe-block-wrapper -->
+    <section class="subscribe-wrapper mx-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="d-flex ai-center py-15">
+                        <div class="svg-inline-subscribe hidden-xs">
+                            <img src="img/icons/mail-sub.svg" alt="">
+                        </div>
+                        <div class="svg-inline-text">
+                            Подпишитесь на события и новости «Вода России»
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <div class="subscribe-edit py-15">
+                        <form class="subscribe-form" action="#" method="post">
+                            <input class="form-control subscribe-input required" type="text" name="email"
+                                placeholder="Ваш e-mail" value="" size="30" maxlength="255" />
+                            <!-- <input type="submit" name="submit" class="btn btn-primary subscribe-btn" value="Подписаться" /> -->
+                            <button class="btn btn-primary btn-subscribe" type="submit">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / .subscribe-block-wrapper -->
+
+
+    <footer id="footer">
+
+        <!-- section wave-1 -->
+        <section class="bg-wave footer-wave-1">
+            <div class="container">
+                <div class="bottom-menu">
+                    <ul>
+                        <li class="active"><a href="#">Новости</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Карта мероприятий</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Рейтинг</a></li>
+                        <li><a href="#">Инструкции</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- section wave-2 -->
+        <section class="bg-wave footer-wave-2">
+            <div class="container">
+                <div class="bottom-social">
+                    <h5 class="bottom-social-title">Мы в социальных сетях</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-white-telegram.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-white-vk.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- section wave-3 -->
+        <section class="bg-wave footer-wave-3">
+            <div class="container">
+                <div class="bottom-copyright">2022 Вода России</div>
+                <a class="bottom-print-link" href="#">
+                    <i class="icon icon-print">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path class="cls-1"
+                                d="M1553,287h-2v3h-8v-3h-2a2,2,0,0,1-2-2v-5a2,2,0,0,1,2-2h2v-4h8v4h2a2,2,0,0,1,2,2v5A2,2,0,0,1,1553,287Zm-8,1h4v-4h-4v4Zm4-12h-4v2h4v-2Zm4,4h-12v5h2v-3h8v3h2v-5Z"
+                                transform="translate(-1539 -274)"></path>
+                        </svg>
+                    </i>
+                    <span class="text">Версия для печати</span>
+                </a>
+            </div>
+        </section>
+
+    </footer>
+    <!-- /FOOTER -->
+
+
+    <!-- SEARCH MODAL -->
+    <div class="inline-search-block">
+        <div class="container">
+            <div class="search-wrapper">
+                <form action="#" class="top-search">
+                    <div class="search-input-div">
+                        <input class="search-input" id="title-search-input" type="text" name="q" value=""
+                            placeholder="Найти" size="40" maxlength="50" autocomplete="off" />
+                    </div>
+                    <div class="search-button-div">
+                        <button class="btn btn-primary btn-search" type="submit" name="s" value="Найти">Найти</button>
+                    </div>
+                </form>
+                <div class="search-close">
+                    <span class="svg svg-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-overlay"></div>
+    <!-- / SEARCH MODAL -->
+
+
+    <!-- FIXED LETTER -->
+    <!-- Оставляем как есть -->
+    <div class="ajax_basket" style="display: none;">
+        <div class="fixed_wrapper">
+            <div class="right_dok">
+                <span class="link" title="Задать вопрос">
+                    <span class="animate-load" data-event="jqm" data-param-id="7" data-name="question">
+                        <i class="svg inline  svg-inline-ask" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #222;
+                                            fill-rule: evenodd;
+                                        }
+                                    </style>
+                                </defs>
+                                <path data-name="ask" class="cls-1"
+                                    d="M1898,414h-14a2,2,0,0,1-2-2V402a2,2,0,0,1,1.95-2,1.025,1.025,0,0,1,.22,0h13.69a1,1,0,0,1,.25.011A2,2,0,0,1,1900,402v10A2,2,0,0,1,1898,414Zm-11.47-12,4.49,4.482L1895.5,402h-8.97Zm11.47,0.5-6.17,6.173a1.26,1.26,0,0,1-1.63,0l-6.2-6.2V412h14v-9.5Z"
+                                    transform="translate(-1882 -400)"></path>
+                            </svg>
+                        </i>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- / FIXED LETTER -->
+
+    <!-- JS -->
+    <!-- jQuery и Bootstrap.js взят с сайта dev.берегдобрыхдел.рф -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
